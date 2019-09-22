@@ -11,7 +11,13 @@ public class HelloContoller {
 
 	@RequestMapping
 	public String hello() {
+		System.out.println("rest controller");
+		a();
 		return "Hello World!";
+	}
+	
+	private void a() {
+		System.out.println("aaaa");
 	}
 
 }
